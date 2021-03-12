@@ -1,3 +1,9 @@
+# sh-realpath
+NAME := sh-realpath
+DESC := bsd realpath support
+BUILDTIME := $(shell date -u +"%Y-%m-%dT%H:%M:%SZ")
+BUILDDATE := $(shell date -u +"%B %d, %Y")
+
 .PHONY: test
 test: lint unit-test
 
@@ -15,4 +21,3 @@ t/%: force
 
 .PHONY: force
 force: ;
-
