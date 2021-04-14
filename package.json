@@ -1,18 +1,19 @@
 {
   "name": "sh-realpath",
-  "version": "1.0.0",
-  "description": "![shellcheck-ci](https://github.com/sambacha/sh-realpath/workflows/shellcheck-ci/badge.svg)",
-  "main": "index.js",
+  "version": "1.1.0",
+  "description": "bsd realpath as bash functions",
+  "main": "realpath.sh",
+  "bin": { "realpath": "realpath.sh" },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "shellcheck -f checkstyle realpath.sh && exit 0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sambacha/sh-realpath.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["realpath", "bsd utils", "core utils", "realname", "osx"],
+  "author": "SEE CONTRIBUTORS",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sambacha/sh-realpath/issues"
   },
